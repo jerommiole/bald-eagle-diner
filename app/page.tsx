@@ -1,5 +1,5 @@
 import Banner from "./components/Hero/Banner";
-import Companies from "./components/Companies/Companies";
+import Marquee from "./components/Marquee/Marquee";
 import Mentor from "./components/Mentor/Mentor";
 import Newsletter from "./components/Newsletter/Newsletter";
 import Students from "./components/Students/Students";
@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Banner />
       <Intro />
-      <Companies />
+      <Marquee />
       <Tabs />
       <Mentor />
       <Students />

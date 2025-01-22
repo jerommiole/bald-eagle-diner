@@ -5,6 +5,7 @@ import Newsletter from "./components/Newsletter/Newsletter";
 import Students from "./components/Students/Students";
 import Tabs from "./components/Courses/Courses";
 import Intro from "./components/Hero/Intro";
+import Gallery from "./components/Gallery/Gallery";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Banner />
       <Intro />
       <Marquee />
+      <Gallery />
       <Tabs />
       <Mentor />
       <Students />

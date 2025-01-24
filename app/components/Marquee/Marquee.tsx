@@ -47,7 +47,7 @@ export default class MultipleItems extends Component {
         {
           breakpoint: 700,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
@@ -56,7 +56,7 @@ export default class MultipleItems extends Component {
         {
           breakpoint: 500,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
@@ -72,7 +72,7 @@ export default class MultipleItems extends Component {
             <Slider {...settings}>
               {data.map((item, i) => (
                 <div key={i}>
-                  <div className="flex items-center justify-around">
+                  <div className="flex items-center justify-center md:gap-x-6 ld:gap-x-12 gap-x-9">
                     <p className="text-4xl font-superstar text-blue">
                       {item.text}
                     </p>

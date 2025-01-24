@@ -6,6 +6,7 @@ import Students from "./components/Students/Students";
 import Tabs from "./components/Courses/Courses";
 import Intro from "./components/Hero/Intro";
 import Gallery from "./components/Gallery/Gallery";
+import Location from "./components/Location/Location";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Intro />
       <Marquee />
       <Gallery />
+      <Marquee />
+      <Location />
       <Tabs />
       <Mentor />
       <Students />

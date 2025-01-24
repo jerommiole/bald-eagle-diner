@@ -17,10 +17,6 @@ export default function Home() {
       <Gallery />
       <Marquee />
       <Location />
-      <Tabs />
-      <Mentor />
-      <Students />
-      <Newsletter />
     </main>
   );
 }

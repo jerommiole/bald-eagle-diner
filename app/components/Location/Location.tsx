@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import IconClock from "../IconClock";
 
 const Location = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[40%,60%] p-6 lg:p-24 gap-8 lg:gap-16">
+    <div
+      id="location"
+      className="grid grid-cols-1 lg:grid-cols-[40%,60%] p-6 lg:p-24 gap-8 lg:gap-16"
+    >
       <div className="flex flex-col gap-4">
         <h3 className="font-superstar text-blue text-2xl lg:text-3xl">
           Our Location
@@ -32,42 +34,36 @@ const Location = () => {
 
         <div className="grid grid-cols-2 gap-2">
           <div className="flex gap-1 items-center">
-            <IconClock />
-            <p>Monday</p>
+            <p className="text-md lg:text-lg">Monday</p>
           </div>
-          <p>11:30 AM - 8:30 PM</p>
+          <p className="text-md lg:text-lg">11:30 AM - 8:30 PM</p>
           <div className="flex gap-1 items-center">
-            <IconClock />
-            <p>Tuesday</p>
+            <p className="text-md lg:text-lg">Tuesday</p>
           </div>
-          <p>11:30 AM - 8:30 PM</p>
+          <p className="text-md lg:text-lg">11:30 AM - 8:30 PM</p>
           <div className="flex gap-1 items-center">
-            <IconClock />
-            <p>Wednesday</p>
+            <p className="text-md lg:text-lg">Wednesday</p>
           </div>
-          <p>11:30 AM - 8:30 PM</p>
+          <p className="text-md lg:text-lg">11:30 AM - 8:30 PM</p>
           <div className="flex gap-1 items-center">
-            <IconClock />
-            <p>Thursday</p>
+            <p className="text-md lg:text-lg">Thursday</p>
           </div>
-          <p>11:30 AM - 8:30 PM</p>
+          <p className="text-md lg:text-lg">11:30 AM - 8:30 PM</p>
           <div className="flex gap-1 items-center">
-            <IconClock />
-            <p>Friday</p>
+            <p className="text-md lg:text-lg">Friday</p>
           </div>
-          <p>11:30 AM - 9:00 PM</p>
+          <p className="text-md lg:text-lg">11:30 AM - 9:00 PM</p>
           <div className="flex gap-1 items-center">
-            <IconClock />
-            <p>Saturday</p>
+            <p className="text-md lg:text-lg">Saturday</p>
           </div>
-          <p>11:00 AM - 9:00 PM</p>
+          <p className="text-md lg:text-lg">11:00 AM - 9:00 PM</p>
           <div className="flex gap-1 items-center">
-            <IconClock />
-            <p>Sunday</p>
+            <p className="text-md lg:text-lg">Sunday</p>
           </div>
-          <p>11:00 AM - 8:30 PM</p>
+          <p className="text-md lg:text-lg">11:00 AM - 8:30 PM</p>
         </div>
       </div>
+
       <div className="hidden lg:flex lg:items-center justify-center">
         <Image
           src="/assets/gallery/bed-location.jpg"

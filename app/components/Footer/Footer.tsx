@@ -26,7 +26,7 @@ const footer = () => {
           <Link href="/#location" className="uppercase">
             Location
           </Link>
-          <Link href="/#contact" className="uppercase">
+          <Link href="mailto:info@baldeaglediner.co.nz" className="uppercase">
             Contact Us
           </Link>
         </div>

@@ -69,7 +69,6 @@ const Location = () => {
         </div>
       </div>
       <div className="hidden lg:flex lg:items-center justify-center">
-        {/* <Map /> */}
         <Image
           src="/assets/gallery/bed-location.jpg"
           alt="Map"

@@ -8,6 +8,7 @@ import WhiteStar from "../WhiteStar";
 import Image from "next/image";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -33,6 +34,7 @@ const Navbar = () => {
                 >
                   About Us
                 </ScrollLink>
+                
                 <Link
                   href="#menu"
                   className="hover:text-red px-3 py-4 text-15px font-medium space-links"

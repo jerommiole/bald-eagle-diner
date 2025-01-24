@@ -4,103 +4,103 @@ import Link from "next/link";
 import React from "react";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
-import Registerdialog from "./Registerdialog";
-import Contactus from "./Contactus";
-
-interface NavigationItem {
-  name: string;
-  href: string;
-  current: boolean;
-}
-
-const navigation: NavigationItem[] = [
-  { name: "Home", href: "/", current: true },
-  { name: "Courses", href: "#courses-section", current: false },
-  { name: "Mentors", href: "#mentors-section", current: false },
-  { name: "Testimonial", href: "#testimonial-section", current: false },
-  { name: "Join", href: "#join-section", current: false },
-];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
+import WhiteStar from "../WhiteStar";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Disclosure as="nav" className="bg-lightpink navbar">
-      <>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="relative flex h-20 items-center justify-between">
-            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
-              {/* LOGO */}
-
-              <div className="flex flex-shrink-0 items-center">
-                <img
-                  className="block h-30px w-30px lg:hidden"
-                  src={"/assets/logo/Logo.svg"}
-                  alt="Courses-Logo"
-                />
-                <img
-                  className="hidden h-48px w-48px lg:block"
-                  src={"/assets/logo/Logo.svg"}
-                  alt="Courses-Logo"
-                />
+    <>
+      <Disclosure as="nav" className="bg-blue">
+        <>
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="relative flex h-20 items-center justify-between">
+              <div className="hidden lg:flex space-x-2">
+                {Array.from({ length: 4 }).map((_, index) => (
+                  <WhiteStar key={index} />
+                ))}
               </div>
 
-              {/* LINKS */}
-
-              <div className="hidden sm:ml-14 md:block">
-                <div className="flex space-x-4">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={classNames(
-                        item.current ? " text-purple" : "hover:text-purple",
-                        "px-3 py-4 text-15px font-medium space-links"
-                      )}
-                      aria-current={item.href ? "page" : undefined}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                  <Contactus />
+              <div className="hidden lg:flex items-center gap-4 text-white">
+                <Link
+                  href="#about"
+                  className="hover:text-red px-3 py-4 text-15px font-medium space-links"
+                  aria-current="page"
+                >
+                  About Us
+                </Link>
+                <Link
+                  href="#menu"
+                  className="hover:text-red px-3 py-4 text-15px font-medium space-links"
+                  aria-current="page"
+                >
+                  Our Menu
+                </Link>
+                <div className="relative -mb-24">
+                  <Link href="/">
+                    <Image
+                      src="/assets/logo/bald-eagle-diner-logo.png"
+                      alt="Bald Eagle Logo"
+                      width={130}
+                      height={130}
+                    />
+                  </Link>
                 </div>
+                <Link
+                  href="#location"
+                  className="hover:text-red px-3 py-4 text-15px font-medium space-links"
+                  aria-current="page"
+                >
+                  Location
+                </Link>
+                <Link
+                  href="#contact"
+                  className="hover:text-red px-3 py-4 text-15px font-medium space-links"
+                  aria-current="page"
+                >
+                  Contact Us
+                </Link>
               </div>
+
+              <div className="hidden lg:flex space-x-2">
+                {Array.from({ length: 4 }).map((_, index) => (
+                  <WhiteStar key={index} />
+                ))}
+              </div>
+
+              <div className="block lg:hidden">
+                <Link href="/">
+                  <Image
+                    src="/assets/logo/bald-eagle-diner-logo.png"
+                    alt="Bald Eagle Logo"
+                    width={60}
+                    height={60}
+                  />
+                </Link>
+              </div>
+
+              <div className="block lg:hidden">
+                <Bars3Icon
+                  className="block h-6 w-6 text-white"
+                  aria-hidden="true"
+                  onClick={() => setIsOpen(true)}
+                />
+              </div>
+
+              <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+                <Drawerdata />
+              </Drawer>
             </div>
-
-            {/* SIGNIN DIALOG */}
-
-            <Signdialog />
-
-            {/* REGISTER DIALOG */}
-
-            <Registerdialog />
-
-            {/* DRAWER FOR MOBILE VIEW */}
-
-            {/* DRAWER ICON */}
-
-            <div className="block md:hidden">
-              <Bars3Icon
-                className="block h-6 w-6"
-                aria-hidden="true"
-                onClick={() => setIsOpen(true)}
-              />
-            </div>
-
-            {/* DRAWER LINKS DATA */}
-
-            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-              <Drawerdata />
-            </Drawer>
           </div>
-        </div>
-      </>
-    </Disclosure>
+        </>
+      </Disclosure>
+      <div className="border-t-4 border-b-4 border-red" />
+      <div className="border-t-4 border-b-4 border-white" />
+      <div className="border-t-4 border-b-4 border-red" />
+      <div className="border-t-4 border-b-4 border-white" />
+      <div className="border-t-4 border-b-4 border-red" />
+    </>
   );
 };
 

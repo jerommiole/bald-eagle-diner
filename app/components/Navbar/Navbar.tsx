@@ -33,7 +33,6 @@ const Navbar = () => {
                 >
                   About Us
                 </ScrollLink>
-
                 <Link
                   href="/menu"
                   className="hover:text-red px-3 py-4 text-15px font-medium space-links"

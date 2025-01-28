@@ -72,7 +72,7 @@ export default class MultipleItems extends Component {
             <Slider {...settings}>
               {data.map((item, i) => (
                 <div key={i}>
-                  <div className="flex items-center justify-center md:gap-x-6 ld:gap-x-12 gap-x-9">
+                  <div className="flex items-center justify-center lg:justify-around md:gap-x-6 lg:gap-x-4 gap-x-12">
                     <p className="text-4xl font-superstar text-blue">
                       {item.text}
                     </p>

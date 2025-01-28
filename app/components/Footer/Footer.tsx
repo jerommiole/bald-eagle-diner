@@ -6,7 +6,7 @@ const footer = () => {
 
   return (
     <div className="bg-blue">
-      <div className="p-6 lg:p-20 gap-8 lg:gap-6 flex flex-col items-center">
+      <div className="p-6 lg:p-20 gap-8 lg:gap-6 flex flex-col items-center mx-auto lg:max-w-7xl">
         <Link href="/">
           <Image
             src="/assets/logo/bed-logo-white.png"
@@ -20,7 +20,7 @@ const footer = () => {
           <Link href="/#about" className="uppercase">
             About Us
           </Link>
-          <Link href="/#menu" className="uppercase">
+          <Link href="/menu" className="uppercase">
             Our Menu
           </Link>
           <Link href="/#location" className="uppercase">

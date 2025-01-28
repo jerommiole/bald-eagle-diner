@@ -1,9 +1,10 @@
+import Link from "next/link";
 import RedStar from "../RedStar";
 
 const Banner = () => {
   return (
     <main className="banner-image">
-      <div className="relative p-6 lg:p-28 md:p-12">
+      <div className="relative p-6 lg:p-28 md:p-12 mx-auto lg:max-w-7xl">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <h1 className="text-3xl md:text-7xl mb-4 text-white">
@@ -24,9 +25,12 @@ const Banner = () => {
           </div>
 
           <div className="flex justify-center p-6">
-            <button className="bg-red hover:bg-blue text-white font-bold py-4 px-6 rounded w-full md:w-auto">
+            <Link
+              href="/menu"
+              className="bg-red hover:bg-blue text-white text-center font-bold py-4 px-6 rounded w-full md:w-auto"
+            >
               Explore Our Menu
-            </button>
+            </Link>
           </div>
         </div>
       </div>

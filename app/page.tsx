@@ -15,20 +15,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://baldeaglediner.co.nz"),
-
-  twitter: {
-    card: "summary",
-    site: "@baldeaglediner",
-    title: "Bald Eagle Diner | A Taste of Classic Americana!",
-    description:
-      "Welcome to Bald Eagle Diner. Enjoy our delicious menu, great atmosphere, and classic American dining experience.",
-    images: ["bed-thumb.jpg"],
-  },
-
-  openGraph: {
-    images: ["bed-thumb.jpg"],
-  },
 };
 
 export default function Home() {

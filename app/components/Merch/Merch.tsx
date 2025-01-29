@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Merch = () => {
@@ -15,9 +14,9 @@ const Merch = () => {
               </h2>
               <p className="text-white text-md lg:text-lg">
                 Show your love for Bald Eagle Diner with our exclusive
-                merchandise! From cozy t-shirts to stylish accessories, we've
-                got something for everyone. Grab your favorite items today and
-                wear your pride!
+                merchandise! From cozy t-shirts to stylish accessories,
+                we&#39;ve got something for everyone. Grab your favorite items
+                today and wear your pride!
               </p>
               <p className="text-white text-lg md:text-2xl lg:text-3xl font-medium">
                 AVAILABLE IN STORE

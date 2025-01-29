@@ -17,6 +17,17 @@ export const metadata: Metadata = {
   },
 };
 
+export const metadata: Metadata = {
+  title: "Bald Eagle Diner | A Taste of Classic Americana!",
+  description:
+    "Welcome to Bald Eagle Diner. Enjoy our delicious menu, great atmosphere, and classic American dining experience.",
+  viewport: "width=device-width, initial-scale=1",
+  keywords: "Bald Eagle Diner, Diner, Restaurant, Menu, Location",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 export default function Home() {
   return (
     <main>

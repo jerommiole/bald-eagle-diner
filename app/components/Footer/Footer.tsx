@@ -17,6 +17,9 @@ const footer = () => {
           />
         </Link>
         <div className="flex flex-col lg:flex-row gap-4 text-white text-center">
+          <Link href="/" className="uppercase">
+            Home
+          </Link>
           <Link href="/#about" className="uppercase">
             About Us
           </Link>

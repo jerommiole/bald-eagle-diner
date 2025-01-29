@@ -1,5 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bald Eagle Diner | Our Menu",
+  description:
+    "Welcome to Bald Eagle Diner. Enjoy our delicious menu, great atmosphere, and classic American dining experience.",
+  viewport: "width=device-width, initial-scale=1",
+  keywords: "Bald Eagle Diner, Diner, Restaurant, Menu, Location",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 const Menu = () => {
   return (

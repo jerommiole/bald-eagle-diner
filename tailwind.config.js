@@ -27,6 +27,8 @@ module.exports = {
       offblack: "#333333",
       red: "#EE1C25",
       blue: "#293472",
+      pink: "#FF6FA9",
+      aqua: "#00B7CC",
     },
     fontFamily: {
       inter: ["Inter", "sans-serif"],

@@ -4,6 +4,7 @@ import Marquee from "./components/Marquee/Marquee";
 import Intro from "./components/Hero/Intro";
 import Gallery from "./components/Gallery/Gallery";
 import Location from "./components/Location/Location";
+import Merch from "./components/Merch/Merch";
 
 export const metadata: Metadata = {
   title: "Bald Eagle Diner | A Taste of Classic Americana!",
@@ -25,6 +26,7 @@ export default function Home() {
       <Gallery />
       <Marquee />
       <Location />
+      <Merch />
     </main>
   );
 }

@@ -6,7 +6,6 @@ import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import WhiteStar from "../WhiteStar";
 import Image from "next/image";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -24,15 +23,13 @@ const Navbar = () => {
               </div>
 
               <div className="hidden lg:flex items-center gap-4 text-white">
-                <ScrollLink
-                  to="about"
-                  smooth={true}
-                  duration={300}
+                <Link
+                  href="/#about"
                   className="hover:text-red px-3 py-4 text-15px font-medium space-links cursor-pointer"
                   aria-current="page"
                 >
                   About Us
-                </ScrollLink>
+                </Link>
                 <Link
                   href="/menu"
                   className="hover:text-red px-3 py-4 text-15px font-medium space-links"
@@ -51,15 +48,13 @@ const Navbar = () => {
                     />
                   </Link>
                 </div>
-                <ScrollLink
-                  to="location"
-                  smooth={true}
-                  duration={300}
+                <Link
+                  href="/#location"
                   className="hover:text-red px-3 py-4 text-15px font-medium space-links cursor-pointer"
                   aria-current="page"
                 >
                   Location
-                </ScrollLink>
+                </Link>
                 <Link
                   href="mailto:info@baldeaglediner.co.nz"
                   className="hover:text-red px-3 py-4 text-15px font-medium space-links"

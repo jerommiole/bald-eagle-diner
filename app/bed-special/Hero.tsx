@@ -1,26 +1,26 @@
+import React from "react";
+import RedStar from "../components/RedStar";
 import Link from "next/link";
-import RedStar from "../RedStar";
 
-const Banner = () => {
+const HeroBED = () => {
   return (
-    <section className="hero-home-image">
+    <section className="hero-bed-special-image">
       <div className="relative p-6 lg:p-28 md:p-12 mx-auto lg:max-w-7xl">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
-            <h1 className="text-3xl md:text-7xl mb-4 text-white">
-              <span className="text-lg md:text-2xl">Welcome to &nbsp;</span>
+            <h1 className="text-3xl md:text-8xl mb-4 text-white">
               <div className="font-superstar flex items-center justify-center gap-2">
                 <RedStar />
-                <span>BALD</span>
+                <span>B</span>
                 <RedStar />
-                <span>EAGLE</span>
+                <span>E</span>
                 <RedStar />
-                <span>DINER</span>
+                <span>D</span>
                 <RedStar />
               </div>
             </h1>
             <p className="text-lg md:text-2xl text-white">
-              A Taste of Classic Americana!
+              Bald Eagle Diner Special
             </p>
           </div>
 
@@ -38,4 +38,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HeroBED;

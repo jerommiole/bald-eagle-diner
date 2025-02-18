@@ -10,9 +10,9 @@ const Location = () => {
         className="grid grid-cols-1 lg:grid-cols-[40%,60%] p-6 lg:p-24 gap-8 lg:gap-16"
       >
         <div className="flex flex-col gap-4">
-          <h3 className="font-superstar text-blue text-2xl lg:text-3xl">
+          <h2 className="font-superstar text-blue text-2xl lg:text-3xl">
             Our Location
-          </h3>
+          </h2>
           <div className="flex flex-row gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +29,24 @@ const Location = () => {
               target="_blank"
             >
               89 Tamaki Drive, Mission Bay, Auckland 1071
+            </Link>
+          </div>
+          <div className="flex flex-row gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="rgba(244,32,42,1)"
+            >
+              <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path>
+            </svg>
+            <Link
+              href="mailto:info@baldeaglediner.co.nz"
+              className="text-base lg:text-lg "
+              target="_blank"
+            >
+              info@baldeaglediner.co.nz
             </Link>
           </div>
           <p className="font-bold lg:text-lg text-blue">Operating Hours</p>

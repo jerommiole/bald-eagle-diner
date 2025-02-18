@@ -44,23 +44,23 @@ const Navbar = () => {
                       alt="Bald Eagle Logo"
                       width={130}
                       height={130}
-                      className="w-[130px] h-[130px] object-contain"
+                      className="w-[130px] h-auto object-contain"
                     />
                   </Link>
                 </div>
+                <Link
+                  href="/bed-special"
+                  className="hover:text-red px-3 py-4 text-15px font-medium space-links"
+                  aria-current="page"
+                >
+                  B.E.D. Special
+                </Link>
                 <Link
                   href="/#location"
                   className="hover:text-red px-3 py-4 text-15px font-medium space-links cursor-pointer"
                   aria-current="page"
                 >
                   Location
-                </Link>
-                <Link
-                  href="mailto:info@baldeaglediner.co.nz"
-                  className="hover:text-red px-3 py-4 text-15px font-medium space-links"
-                  aria-current="page"
-                >
-                  Contact Us
                 </Link>
               </div>
 
@@ -77,6 +77,7 @@ const Navbar = () => {
                     alt="Bald Eagle Logo"
                     width={60}
                     height={60}
+                    className="w-[60px] h-auto"
                   />
                 </Link>
               </div>

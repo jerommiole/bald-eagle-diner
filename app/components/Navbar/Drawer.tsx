@@ -34,6 +34,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                 alt="Bald Eagle Logo"
                 width={70}
                 height={70}
+                className="w-[70px] h-auto"
               />
             </Link>
             <XMarkIcon

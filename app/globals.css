@@ -41,8 +41,16 @@ html:not([data-scroll="0"]) .navbar {
   z-index: 40;
 }
 
-.banner-image {
+.hero-home-image {
   background-image: url("/assets/banner/HERO_HOME.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-position: center 40%;
+}
+.hero-bed-special-image {
+  background-image: url("/assets/banner/HERO_MENU.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);

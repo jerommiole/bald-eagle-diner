@@ -3,14 +3,9 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bald Eagle Diner | Our Menu",
+  title: "Our Menu | Bald Eagle Diner - Classic 1950s Americana Cuisine",
   description:
-    "Welcome to Bald Eagle Diner. Enjoy our delicious menu, great atmosphere, and classic American dining experience.",
-  viewport: "width=device-width, initial-scale=1",
-  keywords: "Bald Eagle Diner, Diner, Restaurant, Menu, Location",
-  icons: {
-    icon: "/favicon.ico",
-  },
+    "Explore our menu of 1950s Americana classics! From juicy burgers and Philly cheesesteaks to milkshakes and hardshakes, savor the taste of nostalgia at Bald Eagle Diner.",
 };
 
 const Menu = () => {

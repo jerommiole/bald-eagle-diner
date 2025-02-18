@@ -19,9 +19,9 @@ const Intro = () => {
           />
         </div>
         <div className="flex flex-col gap-4">
-          <h3 className="font-superstar text-blue text-2xl lg:text-3xl">
+          <h2 className="font-superstar text-blue text-2xl lg:text-3xl">
             Step Back in Time to the 1950s
-          </h3>
+          </h2>
           <p className="text-md lg:text-lg">
             Travel back to an era of big, juicy burgers, kids slurping on
             milkshakes, and classic rock &rsquo;n&rsquo; roll playing from the

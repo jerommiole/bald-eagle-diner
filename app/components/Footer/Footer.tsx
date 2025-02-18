@@ -26,6 +26,9 @@ const footer = () => {
           <Link href="/menu" className="uppercase">
             Our Menu
           </Link>
+          <Link href="/bed-special" className="uppercase">
+            B.E.D. Special
+          </Link>
           <Link href="/#location" className="uppercase">
             Location
           </Link>

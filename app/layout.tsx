@@ -5,9 +5,7 @@ import "./globals.css";
 export const metadata = {
   title: "Bald Eagle Diner",
   description: "A Taste of Classic Americana!",
-
-  metadataBase: new URL("https://baldeaglediner.co.nz"),
-
+  metadataBase: new URL("https://baldeaglediner.com"),
   twitter: {
     card: "summary",
     site: "@baldeaglediner",
@@ -16,7 +14,9 @@ export const metadata = {
       "Welcome to Bald Eagle Diner. Enjoy our delicious menu, great atmosphere, and classic American dining experience.",
     images: ["bed-thumb.jpg"],
   },
-
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     images: ["bed-thumb.jpg"],
   },

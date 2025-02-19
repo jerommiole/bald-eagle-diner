@@ -12,13 +12,13 @@ export const metadata = {
     title: "Bald Eagle Diner | A Taste of Classic Americana!",
     description:
       "Welcome to Bald Eagle Diner. Enjoy our delicious menu, great atmosphere, and classic American dining experience.",
-    images: ["bed-thumb.jpg"],
+    images: ["/assets/banner/bed-thumb.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    images: ["bed-thumb.jpg"],
+    images: ["/assets/banner/bed-thumb.jpg"],
   },
 };
 

@@ -10,7 +10,7 @@ const Location = () => {
         className="grid grid-cols-1 lg:grid-cols-[40%,60%] p-6 lg:p-24 gap-8 lg:gap-16"
       >
         <div className="flex flex-col gap-4">
-          <h2 className="font-superstar text-blue text-2xl lg:text-3xl">
+          <h2 className="font-superstar text-blue text-2xl lg:text-5xl">
             Our Location
           </h2>
           <div className="flex flex-row gap-2">

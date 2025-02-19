@@ -9,8 +9,8 @@ const Merch = () => {
       <div className="bg-pink">
         <div className="mx-auto lg:max-w-7xl">
           <div className="p-6 lg:p-24 gap-8 lg:gap-16 flex flex-col">
-            <div className="flex flex-1 flex-col gap-4 text-center">
-              <h2 className="font-superstar text-white text-2xl lg:text-3xl">
+            <div className="flex flex-1 flex-col gap-4 text-center max-w-2xl mx-auto">
+              <h2 className="font-superstar text-white text-2xl lg:text-5xl drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]">
                 Merch
               </h2>
               <p className="text-white text-md lg:text-lg">

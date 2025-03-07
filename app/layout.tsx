@@ -1,6 +1,7 @@
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Bald Eagle Diner",
@@ -31,6 +32,24 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-916VDBL3NS"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-916VDBL3NS', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <Navbar />
         {children}
         <Footer />
